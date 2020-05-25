@@ -18,7 +18,7 @@ end
 def get_japanese_emoticon(yaml_file, eng_emoti)
   # code goes here
   translation = ""
-  new_hash = load_library('./lib/emoticons.yml')
+  new_hash = load_library(yaml_file)
   new_hash.each do |name, languages|
       if languages[:english] == eng_emoti
       translation = languages[:japanese]
