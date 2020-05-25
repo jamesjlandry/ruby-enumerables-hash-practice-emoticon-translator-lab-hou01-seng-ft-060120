@@ -33,4 +33,16 @@ end
 
 def get_english_meaning
   # code goes here
+   translation = ""
+  new_hash = load_library(yaml_file)
+  new_hash.each do |name, languages|
+      if languages[:japanese] == jap_emoti
+      translation = languages[:english]
+    end
+  end
+    if translation == ""
+      return "Sorry, that emoticon was not found"
+    else 
+      return translation
+    end
 end
