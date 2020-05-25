@@ -24,6 +24,9 @@ def get_japanese_emoticon(yaml_file, eng_emoti)
       translation = languages[:japanese]
       return translation
     end
+    if translation == ""
+      return 
+      "Sorry, that emoticon is not found"
     end
 end
 
