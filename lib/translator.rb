@@ -37,7 +37,7 @@ def get_english_meaning(yaml_file, jap_emoti)
   new_hash = load_library(yaml_file)
   new_hash.each do |name, languages|
       if languages[:japanese] == jap_emoti
-      translation = languages[:english]
+      translation = name
     end
   end
     if translation == ""
