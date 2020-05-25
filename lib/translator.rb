@@ -22,11 +22,12 @@ def get_japanese_emoticon(yaml_file, eng_emoti)
   new_hash.each do |name, languages|
       if languages[:english] == eng_emoti
       translation = languages[:japanese]
-      return translation
     end
     if translation == ""
       return 
       "Sorry, that emoticon is not found"
+    else 
+      return translation
     end
 end
 
