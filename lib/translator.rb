@@ -25,8 +25,7 @@ def get_japanese_emoticon(yaml_file, eng_emoti)
     end
   end
     if translation == ""
-      return 
-      "Sorry, that emoticon is not found"
+      return "Sorry, that emoticon is not found"
     else 
       return translation
     end
