@@ -24,6 +24,7 @@ def get_japanese_emoticon(yaml_file, eng_emoti)
       translation = languages[:japanese]
       return translation
     end
+    end
 end
 
 def get_english_meaning
